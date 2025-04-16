@@ -1,5 +1,41 @@
-template-repository (1.0-1) unstable; urgency=medium
+libfec (1.0-26-gc5d935f-1) unstable; urgency=medium
 
-  * Initial release
+  [ Christoph Berg ]
+  * Switch upstream to https://github.com/fblomqvi/libfec.
+  * DH 13 and B-D on dh-exec.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+
+ -- Christoph Berg <myon@debian.org>  Fri, 04 Mar 2022 09:29:13 +0100
+
+libfec (1.0+20161003-4) unstable; urgency=medium
+
+  * Disable more power-specific code.
+  * Make i386-specific symbols any-i386.
+
+ -- Christoph Berg <myon@debian.org>  Fri, 24 Jan 2020 10:01:56 +0100
+
+libfec (1.0+20161003-3) unstable; urgency=medium
+
+  * Disable altivec code on power, it doesn't compile.
+  * Add i386-specific symbols. (On amd64, generic code is used.)
+  * Add build flags to i386-specific compiler commands.
+  * dpkg-gensymbols: Do strict symbols checking.
+
+ -- Christoph Berg <myon@debian.org>  Thu, 23 Jan 2020 20:23:50 +0100
+
+libfec (1.0+20161003-2) unstable; urgency=medium
+
+  * Set hamradio team as Maintainer.
+  * Add watch file.
+  * Fix altivec compiler flag on power.
+  * Add build flags to all compiler commands.
+
+ -- Christoph Berg <myon@debian.org>  Mon, 20 Jan 2020 11:16:32 +0100
+
+libfec (1.0+20161003-1) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Christoph Berg <myon@debian.org>  Sat, 04 Jan 2020 13:06:15 +0100
